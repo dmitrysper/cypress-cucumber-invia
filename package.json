@@ -1,0 +1,41 @@
+{
+  "name": "cypress-cucumber-example",
+  "version": "1.0.0",
+  "description": "Example of cypress with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test:headless": "./node_modules/.bin/cypress-tags run --env TAGS=@invia",
+    "test:headless-docker": "./node_modules/.bin/cypress-tags run --env TAGS=@invia",
+    "test": "./node_modules/.bin/cypress-tags run --browser chrome --env TAGS=@invia",
+    "cypress:open": "cypress open",
+    "generate:html-report": "node generate_html_report.js",
+    "posttest": "BROWSER=chrome BROWSER_VER=77 ENVIRON=local npm run generate:html-report",
+    "posttest:headless": "BROWSER=electron BROWSER_VER=61 ENVIRON=local npm run generate:html-report",
+    "posttest:headless-docker": "BROWSER=electron BROWSER_VER=61 ENVIRON=docker npm run generate:html-report"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "invia",
+    "page object"
+  ],
+  "author": "Dmitry Speransky",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.16.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cypress-log-to-output": "^1.0.7",
+    "multiple-cucumber-html-reporter": "^1.13.1"
+  }
+}

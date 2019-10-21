@@ -1,0 +1,5 @@
+{
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.feature",
+  "baseUrl": "https://www.ab-in-den-urlaub.de"
+}
