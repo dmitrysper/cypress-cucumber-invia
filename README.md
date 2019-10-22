@@ -15,7 +15,6 @@
 - PageObject pattern (custom implementation)
 - Cypress - E2E testing solution - [http://cypress.io](http://cypress.io)
 - Cypress-cucumber-preprocessor - Cypress plugin to support Cucumber BDD framework - [https://github.com/TheBrainFamily/cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
-- WebDriver.io Visual regression service - [https://github.com/zinserjan/wdio-visual-regression-service](https://github.com/zinserjan/wdio-visual-regression-service)
 - Multi Cucumber HTML Report - feature-rich HTML report creation - [https://github.com/wswebcreation/multiple-cucumber-html-reporter](https://github.com/wswebcreation/multiple-cucumber-html-reporter)
 
 #### 2. Cucumber and Cypress
