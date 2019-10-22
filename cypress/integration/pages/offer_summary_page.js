@@ -19,7 +19,7 @@ class OfferSummaryPage extends BasePage {
                 const hotelNameArr = summaryHotelName.split(' ');
                 hotelNameArr.shift();
                 const shortHotelName = hotelNameArr.join(' ');
-                expect(hotelName).to.include(hotelName);
+                expect(hotelName).to.include(shortHotelName);
             });
     }
 
